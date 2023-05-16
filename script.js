@@ -9,4 +9,14 @@ touristSpots.sort((a, b) => {
     return spotA.localeCompare(spotB);
   });
   
-  console.log(touristSpots);
+ const ulElement = document.getElementById('band');
+
+
+ulElement.innerHTML = '';
+
+
+touristSpots.forEach((spot) => {
+  const liElement = document.createElement('li');
+  liElement.textContent = spot;
+  ulElement.appendChild(liElement);
+});
