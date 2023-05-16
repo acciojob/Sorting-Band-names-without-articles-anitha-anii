@@ -8,6 +8,7 @@ touristSpots.sort((a, b) => {
   
     return spotA.localeCompare(spotB);
   });
+console.log(touristSpots);
   
  const ulElement = document.getElementById('band');
 
